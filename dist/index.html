@@ -10,11 +10,37 @@
 <!-- partial:index.partial.html -->
 <style>
        body{ 
+         
            padding: 0px;
            position:relative;
        }
     </style>
- 
+ <!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v8.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your Chat Plugin code -->
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="101439535023472"
+  theme_color="#44bec7"
+  logged_in_greeting="你好!請問有甚麼可以幫忙的!"
+  logged_out_greeting="你好!請問有甚麼可以幫忙的!">
+      </div>
 <!--BACKtoTOP-START-->
 <a style="display:scroll;position:fixed;bottom:0px;right:5px;" href="#" title="" onFocus="if(this.blur)this.blur()">
 <img alt='' border='0'  />TOP</a>
@@ -69,13 +95,20 @@
 
 <div  class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
-    <div   class="modal-content">
-    我是一個立志成為偉大人物的苦命學生，但是目前因為願望(作夢?)實在太大
-      那就只好先當一個乖乖的高二學生好了!讀著充滿外星文的基本電學，想一想人生哲學
-      對了，我的興趣是沒事就拍拍照，還有悠閒的時候就會泡在自家陽台裡種各種花(是不是很驚訝不是玩傳*對決!)
-      然後配著活潑的英文歌，只是，英文成績好像也沒有變更好!?
-      至於為什麼想要學習怎麼寫出一個漂亮的網頁，為什麼會對程式碼跟網頁有興趣，看下去就知道了.....
-    </div>
+    <div   class="modal-content">我是一個立志成為偉大人物的苦命學生，</div>
+    
+     
+      
+      
+      
+      <div   class="modal-content">但是目前因為願望(作夢?)實在太大<br>
+  那就只好先當一個乖乖的高二學生好了!<br>
+    讀著充滿外星文的基本電學，想一想人生哲學<br>
+   對了，我的興趣是沒事就拍拍照，還有悠閒的時候就會泡在自家陽台裡種各種花(是不是很驚訝不是玩傳*對決!)<br>
+   然後配著活潑的英文歌，雖然英文成績好像沒有變更好<br>
+    至於為什麼想要學習怎麼寫出一個漂亮的網頁，<br>
+   為什麼會對程式碼跟網頁有興趣，看下去就知道了.....</div>
+    
   </div>
 </div>
 
@@ -89,12 +122,12 @@
 <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-sm">
     <div  class="modal-content">
-      因為就像學西班牙語一樣吧
-      完全是希望不要生活了那麼久
-      當同學已經在中研院參加科學講座，
-      當同學已經到高雄比完中提琴比賽，
-      當同學已經在家中學著養了守宮(一種奇怪的生物)，
-      而我卻還沒辦法學會甚麼讓大家誇目相看的技能
+      因為就像學西班牙語一樣吧<br>
+      完全是希望不要生活了那麼久<br>
+      當同學已經在中研院參加科學講座，<br>
+      當同學已經到高雄比完中提琴比賽，<br>
+      當同學已經在家中學著養了守宮(一種奇怪的生物)，<br>
+      而我卻還沒辦法學會甚麼讓大家誇目相看的技能<br>
       就像是永遠投不進的籃球......
 
     </div>
@@ -119,7 +152,7 @@
         </button>
       </div>
       <div class="modal-body">
-      到了這時，有時候會覺得未來離自己好遠，但是，真正回過頭看，才發現，對於 小時候的我所想像的  那個未來已經到了，那麼，對現在的我來說的未來會不會就變成了空口說白話，拖延的藉口呢呢?於是，我.......選擇現在就行動!!
+      到了這時，有時候會覺得未來離自己好遠，<br>但是，真正回過頭看，才發現，<br>對於 小時候的我所想像的<br>  那個未來已經到了，<br>那麼，對現在的我來說的未來<br>會不會就變成了空口說白話，<br>拖延的藉口呢呢?<br>於是，我.......選擇現在就行動!!
         
       </div>
      
@@ -266,7 +299,7 @@
 
     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
       <div class="card-body">
-       除了想學些特別的能力，之後，不管是想要做一個介紹自己或是宣傳自己的網頁之外，同時就不用花大把鈔票請別人幫忙了(然後就換自己變別人的工具人了ㄏㄏ)，同時，也因為現在跟世界上所有人最有關係的莫過於就是網路世界的一切了，在各國都網路化的同時，在每個人生活的各個層面，大家都準備好了嗎?準備接受下一個十年，我們......ㄟ 不對，離題了，至於，為什麼會對程式碼有興趣，應該要從我很喜歡設計漂亮的東西開始，因為總是很高興可以看到漂亮的網頁(像是充滿了簡潔但是卻又有力道的蘋果官網)，因此，才有興趣想說，那我要如何設計一個好看的網頁總有一天，我也要設計出一個讓大家都稱讚的網頁!!!!!
+       除了想學些特別的能力，之後，<br>不管是想要做一個介紹自己或是宣傳自己的網頁之外，<br>同時就不用花大把鈔票請別人幫忙了<br>(然後就換自己變別人的工具人了ㄏㄏ)，<br>同時，也因為現在跟世界上所有人最有關係的莫過於就是網路世界的一切了，<br>在各國都網路化的同時，在每個人生活的各個層面，<br>大家都準備好了嗎?準備接受下一個十年，我們......ㄟ 不對，離題了，<br>至於，為什麼會對程式碼有興趣，應該要從我很喜歡設計漂亮的東西開始，<br>因為總是很高興可以看到漂亮的網頁<br>(像是充滿了簡潔但是卻不簡陋的蘋果官網)，<br>因此才有興趣想，那我要如何設計一個好看的網頁，<br>總有一天，我也要設計出一個讓大家都稱讚的網頁!!!!!
       </div>
     </div>
   </div>
@@ -280,7 +313,7 @@
     </div>
     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
       <div class="card-body">
-  既然都想要設計出一個好看的網頁了，當然就是要先學好，學熟悉各種能夠快速做出好看的網頁的方法(偷懶哈哈!)，其實，如果可以，我之後就是想要再學其他的東西，最後整合起來，就像是之後，我會想要做出一個APP後，我會想要利用網頁跟自家APP後，我會想要利用網頁跟自家APP，來做出自己想要做的任何東西，來做出自己想要做的任何東西，像是通勤時間的小遊戲，或是.....反正，我走對了!
+  既然都想要設計出一個好看的網頁了，<br>當然就是要先學好，學熟悉各種能夠快速做出好看的網頁的方法<br>(偷懶哈哈!)，<br>如果可以，我之後想再學其他的東西，最後整合起來，<br>就像是之後，我會想要做出一個APP後，我會想要利用網頁跟自家APP後，<br>我會想要利用網頁跟自家APP，來宣傳做出自己做的任何東西，.....反正，我走對教室了!
       </div>
     </div>
   </div>
@@ -294,7 +327,7 @@
     </div>
     <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
       <div class="card-body">
-        我想最大的問題就是我的打字速度不快(這真的是問題可怕問題)，當然還有一些問題就是說，雖然程式很好用，但是總覺得，我怕把程式只有定義為賺錢的工具了，而是繼續希望我寫程式的初衷就是-----我能整合跟做出一個大家都用的到的好用工具幫助大家都可以過一個更好的生活，讓程式碼更有人性化而不是一連串英文字跟不懂的數字!
+        我想最大的問題就是我的打字速度不快(這真的是問題可怕問題)，<br>當然還有很多問題就是說，雖然程式好用，<br>但總覺得如果當有一天程式碼一多之後，突然出現哪裡有錯誤，<br>真的是超級難找的，完全不像Visual Studio 還有貼心的提示
       </div>
     </div>
   </div>

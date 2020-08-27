@@ -2,6 +2,8 @@ body {
   margin:0px;
 }
 
+
+
 .allitem {
   display:flex;
   flex-direction: column;
@@ -290,3 +292,5 @@ background-image:  url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEA
   background-position: center;
   font-size:2em;
    font-weight:bold;
+  
+}
